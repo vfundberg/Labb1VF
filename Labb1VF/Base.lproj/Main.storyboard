@@ -1,24 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wJ5-BU-bSy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Startsida-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Startsida" title="Startsida" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_4068" translatesAutoresizingMaskIntoConstraints="NO" id="w4z-9x-9mK">
+                                <rect key="frame" x="19" y="113" width="337" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victor Fundberg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-TL-3YQ">
+                                <rect key="frame" x="88" y="369" width="199" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.30965866450000001" blue="0.25716058790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTI-sY-X02">
+                                <rect key="frame" x="154" y="411" width="67" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.30965866450000001" blue="0.25716058790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <segue destination="t34-Dq-Qbf" kind="show" id="1hC-ms-82W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-yy-PN5">
+                                <rect key="frame" x="134" y="459" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.30965866450000001" blue="0.25716058790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Fritidsintressen"/>
+                                <connections>
+                                    <segue destination="tbG-3m-o1U" kind="show" id="Mxo-ls-3zH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFo-BR-Wcr">
+                                <rect key="frame" x="154" y="507" width="67" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.30965866450000001" blue="0.25716058790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5 snabba"/>
+                                <connections>
+                                    <segue destination="3mm-jW-dSw" kind="show" id="Tmh-Iz-SQH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Startsida" id="CgP-FS-RkT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375.19999999999999" y="32.833583208395808"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9gZ-f6-5uy">
+            <objects>
+                <viewController id="tbG-3m-o1U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9P-Qk-tS1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="På fritiden spelar jag innebandy, golf, tv-spel och umgås med flickvän och familj." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ij0-Bh-Uga">
+                                <rect key="frame" x="100" y="64" width="175" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.30965866450000001" blue="0.25716058790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_5816" translatesAutoresizingMaskIntoConstraints="NO" id="3sZ-Da-aKP">
+                                <rect key="frame" x="16" y="429" width="343" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_5309" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-bB-B8p">
+                                <rect key="frame" x="0.0" y="227" width="375" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YMr-u9-JOR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7n-Kz-JP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143.2" y="245.12743628185908"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bcd-px-XAG">
+            <objects>
+                <viewController id="3mm-jW-dSw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cen-al-Sal">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VTa-ak-Xtx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfi-JL-X5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="946"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="vEo-fp-aKn">
+            <objects>
+                <viewController title="Info" id="t34-Dq-Qbf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kle-Nw-TT7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_0595" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-GZ-2ba">
+                                <rect key="frame" x="0.0" y="64" width="375" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jIK-5j-aTh">
+                                <rect key="frame" x="16" y="287" width="343" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Fullständigt namn: Carl Victor Fundberg                     Ålder: 25 år                                                                   Längd: 183 cm                                                           Vikt: 78 kg                                                     Civilstatus: Sambo                                                       Familj: Mamma, pappa, syster och bror                                                      Bor i: Landvetter  </string>
+                                <color key="textColor" red="1" green="0.30965866450000001" blue="0.25716058790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="familjen" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-C7-g1Q">
+                                <rect key="frame" x="70" y="517" width="235" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_0532" translatesAutoresizingMaskIntoConstraints="NO" id="yNn-3u-tKY">
+                                <rect key="frame" x="200" y="429" width="253" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_5188" translatesAutoresizingMaskIntoConstraints="NO" id="LTK-wB-nt2">
+                                <rect key="frame" x="-72" y="455" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0cY-aS-Yvp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGC-ur-H9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.8" y="-426.83658170914543"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f9M-3T-b6u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wJ5-BU-bSy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nQp-SO-a5n">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6CW-zf-WD9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFd-NK-Yei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="-62"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0532" width="3024" height="4032"/>
+        <image name="IMG_0595" width="3024" height="4032"/>
+        <image name="IMG_4068" width="960" height="1280"/>
+        <image name="IMG_5188" width="2448" height="3264"/>
+        <image name="IMG_5309" width="3000" height="1998"/>
+        <image name="IMG_5816" width="3024" height="3514"/>
+        <image name="familjen" width="2048" height="1367"/>
+    </resources>
 </document>
