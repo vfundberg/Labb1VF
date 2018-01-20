@@ -14,6 +14,7 @@
 		5E95893E200A1ACD00EDDD44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E95893C200A1ACD00EDDD44 /* LaunchScreen.storyboard */; };
 		5E958941200A1ACD00EDDD44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E958940200A1ACD00EDDD44 /* main.m */; };
 		5ECAFB1E20124C4800B25BD6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAFB1D20124C4800B25BD6 /* GameViewController.m */; };
+		5ECAFB212013586C00B25BD6 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAFB202013586C00B25BD6 /* ColorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5E958940200A1ACD00EDDD44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ECAFB1C20124C4800B25BD6 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		5ECAFB1D20124C4800B25BD6 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5ECAFB1F2013586C00B25BD6 /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		5ECAFB202013586C00B25BD6 /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				5E958940200A1ACD00EDDD44 /* main.m */,
 				5ECAFB1C20124C4800B25BD6 /* GameViewController.h */,
 				5ECAFB1D20124C4800B25BD6 /* GameViewController.m */,
+				5ECAFB1F2013586C00B25BD6 /* ColorViewController.h */,
+				5ECAFB202013586C00B25BD6 /* ColorViewController.m */,
 			);
 			path = Labb1VF;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECAFB1E20124C4800B25BD6 /* GameViewController.m in Sources */,
+				5ECAFB212013586C00B25BD6 /* ColorViewController.m in Sources */,
 				5E958936200A1ACD00EDDD44 /* ViewController.m in Sources */,
 				5E958941200A1ACD00EDDD44 /* main.m in Sources */,
 				5E958933200A1ACD00EDDD44 /* AppDelegate.m in Sources */,

@@ -21,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     hiddenNumber = 1 + arc4random_uniform(100);
+    UITapGestureRecognizer *click = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hideKeyboard)];
+    [self.view addGestureRecognizer:click];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,10 +38,14 @@
     }else if (hiddenNumber==guess){
         self.answerInfo.text=@"You won!";
     }
+    self.userGuess.text= @" ";
 }
 - (IBAction)generateNumber:(id)sender {
     hiddenNumber = 1 + arc4random_uniform(100);
     self.answerInfo.text= @" ";
+}
+-(void)hideKeyboard {
+    [self.userGuess resignFirstResponder];
 }
 
 
